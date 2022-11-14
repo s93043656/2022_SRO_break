@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional');
+
+html,body{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Noto Sans TC', sans-serif !important;
+	position: relative;
+	padding: 0;
+	margin: 0;	
+}
+
+/*-------------------------------footer-----------------------------------*/
+
+.footer{
+	position: relative;
+	background-color: #0c0c0c;
+	width: 100%;
+	height: 130px;
+	font-size: 0.75rem;
+	z-index: 1;
+	bottom: 0; 
+	min-width: 1024px;
+}
+.footer .footerwrap{
+	width: max-content;
+	height: 130px;
+	padding: 10px 0;
+	margin: 0 auto;
+	color: #fff;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -moz-box;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+	position: relative;
+	width: max-content;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -moz-box;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.digeam-logo{
+	position: relative;
+	background:url('../img/footer/digeamlogo.png');
+	background-position:left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 133px;
+    height:32px;
+    text-indent: -9999px;
+    display: block;
+}
+.company-logo{
+	position: relative;
+	margin: 0 15px;
+}
+.wemademax{
+	background:url('../img/footer/wemademax.png');
+	background-position:left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:150px;
+    height:18px;
+    text-indent: -9999px;
+    display: block;
+}
+.dgcopy-container{
+	position: relative;
+	width: max-content;
+	margin: 0 15px;
+}
+.dgcopy-container p{
+	position: relative;
+	margin: 0 0 5px 0;
+	color: #fff;
+}
+.dg-mail a{
+	color: #e5be7b;
+}
+.dg-mail a:hover{
+	color: #fff;
+}
+.grade{
+	width: max-content;
+    display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -moz-box;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 15px;
+}
+.grade > img{
+	width: 51px;
+	height: 51px;
+	margin-right: 5px;
+}
+.grade > ul{
+	position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.grade > ul li{
+}
+
+/*for 手機裝置(螢幕尺寸<768px)*/
+@media screen and (max-width:767px){
+	.footer{
+		width: 100%;
+		height: auto;
+		min-width: unset;
+	}
+	.footer .footerwrap{
+		width: 100%;
+		height: auto;
+		justify-content: flex-start;
+    	align-items: center;
+    	flex-direction: column;
+	}
+	.logo-container{
+		position: relative;
+		width: max-content;
+		justify-content: flex-start;
+    	align-items: center;
+    	flex-direction: column;
+	}
+	.logo-container a{
+		margin: 0 auto 15px;
+	}
+	.dgcopy-container {
+	    position: relative;
+	    width: max-content;
+	    margin: 10px auto;
+	    text-align: center;
+	}
+	.grade {
+	    width: max-content;
+	    display: flex;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: -moz-box;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	    align-items: flex-start;
+	    margin: 10px auto;
+	}
+}
+
+/*for 平板裝置(768px<螢幕尺寸<1024px)*/
+@media screen and (min-width:768px) and (max-width:1024px){
+	.footer{
+		width: 100%;
+		height: auto;
+		min-width: unset;
+	}
+	.footer .footerwrap{
+		width: 100%;
+		height: auto;
+		justify-content: center;
+    	align-items: center;
+	}
+	.logo-container{
+		width: 100%;
+		justify-content: center;
+    	align-items: center;
+    	margin: 15px 0;
+	}
+	.dgcopy-container,.grade{
+		margin: 10px;
+	}
+}
